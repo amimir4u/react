@@ -27,4 +27,34 @@
 
 - Event handler function naming convention: event name + Handlder.
 
-- Change the code somehow that by clicking a button it prints "Clicked" on the console?
+- Change the code somehow that by clicking a button it prints "Clicked!" on the console?
+
+---
+
+### Lecture 3: How Component Functions Are Executed
+
+---
+
+-Your component is just a regular function. Whenever react evaluates this JSX code, it will call this component function and it continues untill there is no JSX code to be evaluated. It starts with index.js
+where we initially point at the app component.
+
+- The above process just happens once. We should say react that certain component must be re-evaluated.
+
+---
+
+### Lecture 4: Working With State
+
+---
+
+- Extract specifically named things from react library => `import React, {useState} from 'react'` (a function provided by react library and this function allows us to define values as state when changes to this values should reflect in the component function being called again).
+
+- `useState()` is called react hook:
+
+  1. Hooks are recognized with the starting word "use".
+  2. Hooks must be called **_directly_** inside react component functions.
+
+- put `const [title, setTitle] = useState(props.title)` at the begining of component function.
+
+- Inside clikHandler function put `setTitle('Updated')` => the component function will be executed again when our state changes.
+
+- State updating function doesn't change the value right away but instead schedules this state update.
