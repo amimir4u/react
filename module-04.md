@@ -58,3 +58,15 @@ where we initially point at the app component.
 - Inside clikHandler function put `setTitle('Updated')` => the component function will be executed again when our state changes.
 
 - State updating function doesn't change the value right away but instead schedules this state update.
+
+---
+
+### lecture 5: A Closer Look at te `useState` hook
+
+---
+
+- `useState` register some states for the component in which it is being called.
+
+- The component function is called four times and every time it is called a new separate state is created and managed independently by react.
+
+- React manages states for us so we use `const [title, setTitle]` and there is no need to use `let`. for the first time react use `props.title` in `useState(props.title)` for initialization and afterwards it doesn't use it.
