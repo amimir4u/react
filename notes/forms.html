@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- form without any attribute the form is submited to this page -->
+
+    <!-- with enctype we say our server that we are sending our form data in mutltiple parts -->
+    <form action="results.html" method="get" enctype="multipart/form-data">
+      <div>
+        <!--  use for => clicking the label will highlight the input field -->
+
+        <label for="name">Name</label>
+        <!-- the default type is text and the default value is User-->
+        <input type="text" name="name" id="name" value="User" required />
+      </div>
+      <div>
+        <label for="family">Family</label>
+        <input type="text" id="family" placeholder="Family" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div>
+        <label for="number">Age</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="200"
+          step="5"
+        />
+      </div>
+      <div>
+        <label for="date"></label>
+        <input type="date" name="date" id="date" min="1986-6-24" />
+      </div>
+
+      <div>
+        <label for="banana">Banna</label>
+        <input type="checkbox" name="banana" id="banana" />
+      </div>
+
+      <div>
+        <label for="apple">Apple</label>
+        <input type="checkbox" name="apple" id="apple" />
+      </div>
+      <div>
+        <label for="male">Male</label>
+        <!-- we need value here because we used same name for both radio buttons and so the value will be passed -->
+        <input type="radio" name="gender" id="male" value="male" />
+      </div>
+
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </div>
+
+      <div>
+        <label for="eyeColor">Eye Color</label>
+        <!--  <select name="eyeColor" id="eyeColor" multiple> use multiple attribute if you wnat choose all elements -->
+        <select name="eyeColor" id="eyeColor" multiple>
+          <option value="blcak">black</option>
+          <option label="Brown" value="brown"></option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10">
+This is defualt text</textarea
+        >
+      </div>
+
+      <div>
+        <input type="hidden" name="hidden" value="hi" />
+      </div>
+
+      <div>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+
+      <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url" />
+      </div>
+      <div>
+        <div>
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <!-- instead of usisng for you wrap input field -->
+        <label>
+          passwrord
+          <input type="password" name="passwrord" required />
+        </label>
+      </div>
+      <!--if you specify type of submit after pressing Enter it will be automatically pressed -->
+      <button type="submit">Submit</button>
+      <!-- it sets everything back to default -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

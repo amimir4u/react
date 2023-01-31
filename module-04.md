@@ -70,3 +70,11 @@ where we initially point at the app component.
 - The component function is called four times and every time it is called a new separate state is created and managed independently by react.
 
 - React manages states for us so we use `const [title, setTitle]` and there is no need to use `let`. for the first time react use `props.title` in `useState(props.title)` for initialization and afterwards it doesn't use it.
+
+---
+
+### lecture 7: Adding From Inputs
+
+---
+
+- To emphasize that JSX under the hood uses react library we import react library, but it is not necessary.
