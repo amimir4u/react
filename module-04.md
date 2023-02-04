@@ -61,7 +61,7 @@ where we initially point at the app component.
 
 ---
 
-### lecture 5: A Closer Look at te `useState` hook
+### Lecture 5: A Closer Look at te `useState` hook
 
 ---
 
@@ -73,8 +73,69 @@ where we initially point at the app component.
 
 ---
 
-### lecture 7: Adding From Inputs
+### Lecture 7: Adding From Inputs
 
 ---
 
 - To emphasize that JSX under the hood uses react library we import react library, but it is not necessary.
+- Add ExpenseForm.js and NewExpense.js.
+
+---
+
+### Lecture 8: Listening to User Input
+
+---
+
+- Add an event listener (`onChange`) and see the changes on console.
+
+---
+
+### Lecture 9: Working With Mutliple States
+
+---
+
+- add `useStat` for amount, date and tilte. note that these state are completely independent.
+
+---
+
+### Lecture 10: Using One State Instead (And Waht's Better)
+
+---
+
+- When you update your state react will not merge this with old state
+  it will simply replace the old state with the new one.
+
+- Change the code to use only one react hook.
+
+---
+
+### Lecture 11: Updating State That depends on the Previous State
+
+---
+
+- if you are depend on previous state use the following form:
+
+---
+
+### Lecture 12: Handling Form Submission
+
+---
+
+- If a button inside a `<form>` is pressed. this `form` emits an event that can be triggered by listening to it.
+
+---
+
+### Lecture 13: Adding Two Way Binding
+
+---
+
+- How we can clear inputs? we use something that is called two-way binding: for inputs we don't just listen to changes we
+  can also pass a new value back into input => add value attribute two input tag.
+
+  ***
+
+  ### Lecture 14: 014 Child-to-Parent Component Communication (Bottom-up)
+
+  ***
+
+  -
