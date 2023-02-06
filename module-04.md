@@ -132,10 +132,30 @@ where we initially point at the app component.
 - How we can clear inputs? we use something that is called two-way binding: for inputs we don't just listen to changes we
   can also pass a new value back into input => add value attribute two input tag.
 
-  ***
+---
 
-  ### Lecture 14: 014 Child-to-Parent Component Communication (Bottom-up)
+### Lecture 14: 014 Child-to-Parent Component Communication (Bottom-up)
 
-  ***
+---
 
-  -
+- Change the code some way that expense date goes from ExpenseForm.js to App.js.
+
+---
+
+### Lecture 15: Lifting the State Up
+
+---
+
+- Moving date from a child component to some parent component to either use it there or passed it down to some
+  other child component.
+
+---
+
+### Lecture 16: Controlled vs Uncontrolled Components & Stateless vs Stateful Components
+
+---
+
+- Controlled component means a value which is used in the component is passed on to a parent component through props and is received from the parent component.
+
+- presentation vs stateful === stateless vs stateful === dumb vs smart
+  components.
